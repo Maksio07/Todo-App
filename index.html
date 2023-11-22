@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="icon" type="rels/x-icon" href="../dist/img/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./dist/css/style.min.css">
+    
+</head>
+<body data-bg="dark">
+    <main class="todo-app">
+        <div class="wrapper">
+            <section class="todo-up">
+    <div class="todo-up__presentation">
+        <h1 class="todo-up__presentation--title">todo</h1>
+        <button class="todo-up__presentation--theme-icon sun" type="button" aria-label="icon" ></button>
+    </div>
+    <form class="todo-up__add">
+        <input type="text" class="todo-up__add--input" id="type" placeholder="Create a new todo..." data-input="dark">
+        <span class="circle" data-check="dark"></span>
+        <button class="todo-up__add--add-btn" type="submit" data-add="dark">add</button>
+    </form>
+    <p class="todo-up__error" data-error="dark"></p>
+</section>
+            <section class="output-area">
+    <ul class="output">
+        <li class="output__box" data-box="dark">
+            <button class="output__box--check" type="button" aria-label="check" data-check="dark"></button>
+            Complete online Java Script course
+            <button class="output__box--delete" type="button" aria-label="delete" data-delete="dark"></button>
+        </li>
+        <li class="output__box" data-box="dark">
+            <button class="output__box--check" type="button" aria-label="check" data-check="dark"></button>
+            Jog around the park 3x
+            <button class="output__box--delete" type="button" aria-label="delete" data-delete="dark"></button>
+        </li>
+        <li class="output__box" data-box="dark">
+            <button class="output__box--check" type="button" aria-label="check" data-check="dark"></button>
+            10 minutes meditation
+            <button class="output__box--delete" type="button" aria-label="delete" data-delete="dark"></button>
+        </li>
+        <li class="output__box" data-box="dark">
+            <button class="output__box--check" type="button" aria-label="check" data-check="dark"></button>
+            Road for 1 hour
+            <button class="output__box--delete" type="button" aria-label="delete" data-delete="dark"></button>
+        </li>
+        <li class="output__box" data-box="dark">
+            <button class="output__box--check" type="button" aria-label="check" data-check="dark"></button>
+            Pick up groceries
+            <button class="output__box--delete" type="button" aria-label="delete" data-delete="dark"></button>
+        </li>
+        <li class="output__box" data-box="dark">
+            <button class="output__box--check" type="button" aria-label="check" data-check="dark"></button>
+            Complete Todo App on Frontend Mentor
+            <button class="output__box--delete" type="button" aria-label="delete" data-delete="dark"></button>
+        </li>
+    </ul>
+</section>
+            <section class="buttons" data-buttons="dark">
+        <p class="buttons__items-count"><span class="amount"></span> items left</p>
+    <div class="buttons__middle" data-middle="dark">
+        <button type="button" class="buttons__middle--all">All</button>
+        <button type="button" class="buttons__middle--active">Active</button>
+        <button type="button" class="buttons__middle--completed">Completed</button>
+    </div>
+    <button type="button" class="buttons__clear-completed">Clear Completed</button>
+</section>
+ 
+<p class="tutorial">Drag and drop to reorder list</p>
+        </div>
+    </main>
+    
+   
+
+    <script src="./dist/js/main.min.js"></script>
+</body>
+</html>
