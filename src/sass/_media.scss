@@ -217,9 +217,21 @@
 	}
 }
 
+@media (min-width: 390px) {
+	.todo-up__add--input,
+	.output__box {
+		text-indent: 5rem;
+	}
+}
+
 @media (min-width: 496px) {
 	.wrapper {
 		width: 42rem;
+	}
+
+	.todo-up__add--input,
+	.output__box {
+		text-indent: 3rem;
 	}
 
 	.output {
